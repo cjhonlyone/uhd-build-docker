@@ -41,7 +41,7 @@ RUN set -eux; apt-get update -y \
     && apt-get -y install -y python3 pip git vim bash build-essential doxygen \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install g++ git inetutils-tools libboost-all-dev libncurses5 libncurses5-dev libusb-1.0-0 libusb-1.0-0-dev \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y install libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml python3-yaml \
     && locale-gen "en_US.UTF-8" \
     && rm -rf /var/lib/apt/list* /tmp/* /var/tmp/*
 

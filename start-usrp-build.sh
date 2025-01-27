@@ -12,6 +12,7 @@ docker run -dit \
     --volume $(pwd)/work:/work:rw \
     -u $(id -u):$(id -g) \
     --network host \
+    -v /etc/localtime:/etc/localtime:ro \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     usrp-docker \
